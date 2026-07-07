@@ -1,0 +1,5 @@
+# Large binaries / working extraction dir — do not commit
+work/
+*.apk
+*.dex
+*.so
