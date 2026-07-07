@@ -73,6 +73,28 @@ Each record's `q` = quote, `a` = author, `sa` = source/attribution. The
 cleartext `ul` gives the letter→cipher-number substitution and `pr` the letter
 positions, so the full playable cryptogram is reconstructable per level.
 
+## Starting reveal state (which cells begin filled)
+The pre-filled letters are **authored per level (deterministic), not random** —
+they are stored in the cleartext **`pr`** field (the game's `isLetterPrevRevealed`
+→ "pre-revealed"). `pr` is a `_`-joined list of **1-indexed letter positions**
+(spaces/punctuation skipped) that start revealed. Reveals are per-cell (a scatter
+of individual hint letters), not per-symbol. The reveal fraction follows a fixed
+difficulty curve — ~30% for the first ~10 tutorial levels, settling to a steady
+**~11%** thereafter — which is itself proof the layout is designed, not random.
+
+Two other position fields belong to a separate, A/B-tested "Locked Letter"
+mechanic (`isLockedLetterExpVar`): **`lp`** (locked positions) and **`dlp`**
+(default locked positions). `pr` is the base starting reveal.
+
+`extraction/build_levels.py` turns this into per-level tables in
+`data/levels/*_levels.{csv,jsonl}` with columns:
+`level, quote` (letters + spaces only, no author/punctuation), `num_letters`,
+`num_revealed`, `revealed_positions`, `mask` (1=revealed/0=hidden per letter),
+and `start_board` (the quote with hidden letters shown as `_`). Almost all
+levels index `pr` over letter cells only; a few daily puzzles index over
+letters+apostrophes, which the builder detects and remaps.
+
 ## Tooling in this repo
 - `extraction/analyze.py` — reproduces the structural / cipher analysis.
 - `extraction/decrypt.py` — decrypts all datasets to JSON + CSV.
+- `extraction/build_levels.py` — per-level tables with the starting reveal state.
