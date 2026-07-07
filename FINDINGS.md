@@ -35,30 +35,44 @@ The `ul` and `pr` fields — the substitution key and the grid layout — are in
 
 ## Cipher analysis (see `extraction/analyze.py`)
 - Ciphertext byte-lengths are all multiples of **4** but **not** multiples of
-  16 → **stream cipher**, not AES-ECB/CBC.
-- Pooled entropy ≈ **7.93 bits/byte** → strong encryption, no obvious encoding.
-- First bytes uniformly distributed; two-time-pad / keystream-reuse tests
-  (whole-field and tail-after-nonce) all failed → **per-record random nonce,
-  no keystream reuse**. Ciphertext-only attack is not feasible.
-- Length signature fits `[ 8-byte nonce ] + streamcipher(plaintext padded to
-  4)` → most likely **Salsa20 / ChaCha20** (8-byte nonce family) or AES-CTR.
+  16, and the minimum length is 8 bytes (2 words) → the cipher operates on a
+  **`Uint32List`** (confirmed by the `_decryptUint32List` symbol in
+  `libapp.so`).
+- Pooled entropy ≈ **7.93 bits/byte**; first bytes vary per record and
+  two-time-pad tests fail → good diffusion, not a naive XOR/keystream scheme.
+- Length signature + uint32-array + 16-byte key → **XXTEA (Corrected Block
+  TEA)**, no IV/nonce (deterministic block cipher over the whole array).
 
-## The blocker: missing key
-- The decryption key + algorithm are compiled into the Flutter Dart snapshot
-  **`libapp.so`**.
-- This APK is an **AAB base split — it contains ZERO native libraries**
-  (`lib/<abi>/*.so` is absent). The key is therefore not in this file.
-- The key is **not** in the DEX (Java/Kotlin side — the `updatePuzzleInfo` /
-  `puzzle_info_encrypted` symbols don't appear there; the AES refs in DEX
-  belong to bundled ad SDKs) and **not** in any cleartext config.
+## The cipher: XXTEA
+- The key + algorithm live in the Flutter Dart snapshot **`libapp.so`** (arm64,
+  25 MB). This is **absent from the base APK** (an AAB base split with zero
+  native libs) — it was recovered from the **`config.arm64_v8a`** split inside
+  the full XAPK bundle (`split_0.apk` → `lib/arm64-v8a/libapp.so`).
+- Scheme: **XXTEA**, little-endian words, over the base64-decoded bytes of each
+  field; plaintext is the UTF-8 string (zero-padded to a 4-byte boundary).
+- Key (16 bytes, `Key.fromUtf8`): **`xK#9pL@2mN!5vQ8r`**
+  (`784b2339704c40326d4e213576513872`). Recovered by brute-forcing candidate
+  string constants from `libapp.so` against the XXTEA cipher, validated by
+  readable-text output.
 
-## To finish decryption
-Provide the native library **`libapp.so`** (arm64-v8a) from an install of this
-game — e.g. a "universal" APK or the `config.arm64_v8a` split. The key is
-recoverable from it (`strings libapp.so` for a hardcoded key, or by locating
-the Salsa20/ChaCha20 key setup). Then set `KEY` / `SCHEME` in
-`extraction/decrypt.py` and run it to emit fully decrypted level data.
+## Decrypted output
+`extraction/decrypt.py` decrypts every field and writes, per dataset, a
+`*_decrypted.json` and a flat `*_decrypted.csv` (id, quote, author, source):
+
+| dataset | records | notes |
+|---------|--------:|-------|
+| `puzzle_info` | 2387 | Main English puzzle set |
+| `puzzle_info_es` | 422 | Spanish |
+| `puzzle_info_var1` (+`_es`) | 2387 / 422 | Re-encrypted duplicate of the main set |
+| `dp_info` | 670 | Daily puzzles (keyed by date) |
+| `dq_secret_puzzle` | 89 | Secret/"On This Day" puzzles |
+
+All fields decrypt cleanly (0 garbled records; accented Spanish preserved).
+
+Each record's `q` = quote, `a` = author, `sa` = source/attribution. The
+cleartext `ul` gives the letter→cipher-number substitution and `pr` the letter
+positions, so the full playable cryptogram is reconstructable per level.
 
 ## Tooling in this repo
 - `extraction/analyze.py` — reproduces the structural / cipher analysis.
-- `extraction/decrypt.py` — plug in the recovered key to decrypt all datasets.
+- `extraction/decrypt.py` — decrypts all datasets to JSON + CSV.

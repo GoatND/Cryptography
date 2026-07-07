@@ -1,69 +1,96 @@
 #!/usr/bin/env python3
-"""Decrypt the Cryptogram game's level data once the key is known.
+"""Decrypt the Cryptogram game's level data and emit clean JSON + CSV.
 
-The encrypted fields (`q` = quote, `a` = answer/author, `sa`) are base64 of
-[ nonce || stream-cipher(plaintext) ]. The cipher family and secret key live
-in the Flutter Dart snapshot (libapp.so), which is NOT present in the base
-APK. Once the key + scheme are recovered from libapp.so, fill in KEY / SCHEME
-below and run this to emit fully decrypted JSON.
+The encrypted fields (`q` = quote, `a` = author, `sa` = source) are base64 of
+an **XXTEA**-encrypted UTF-8 string (data & key little-endian, 16-byte key).
+The key was recovered from the Flutter Dart snapshot (libapp.so):
 
-Supports the most likely schemes for the observed length signature
-(8-byte-nonce-prefixed stream): Salsa20, ChaCha20, AES-CTR. Requires
-`pip install pycryptodome` for AES/ChaCha/Salsa.
+    Key.fromUtf8('xK#9pL@2mN!5vQ8r')
 
-Usage:  python3 decrypt.py [in.json] [out.json]
+`ul` (letter -> cipher number) and `pr` (letter positions) are already
+cleartext in the source files. This script decrypts the text fields and
+writes decrypted JSON alongside a flat CSV of quote/author/source.
+
+Usage:  python3 decrypt.py            # decrypts every data/*_encrypted*.json
+        python3 decrypt.py in.json out.json
 """
-import sys, os, json, base64
+import sys, os, json, base64, struct, glob, csv
 
-# ---- FILL THESE IN once recovered from libapp.so -------------------------
-KEY = None            # bytes, e.g. b"..." (16/24/32 bytes)
-SCHEME = "salsa20"    # one of: "salsa20", "chacha20", "aes-ctr", "xor"
-NONCE_LEN = 8         # bytes of nonce prefixed to each ciphertext
-# --------------------------------------------------------------------------
-
+KEY = b'xK#9pL@2mN!5vQ8r'                 # 16-byte XXTEA key (from libapp.so)
+DELTA = 0x9E3779B9
+MASK = 0xFFFFFFFF
 HERE = os.path.dirname(os.path.abspath(__file__))
+DATA = os.path.join(HERE, "..", "data")
 
-def b64d(s: str) -> bytes:
-    s2 = s.replace("-", "+").replace("_", "/")
-    return base64.b64decode(s2 + "=" * (-len(s2) % 4))
+def b64d(s):
+    return base64.b64decode(s + "=" * (-len(s) % 4))
 
-def stream_decrypt(blob: bytes) -> bytes:
-    nonce, ct = blob[:NONCE_LEN], blob[NONCE_LEN:]
-    if SCHEME == "xor":
-        return bytes(c ^ KEY[i % len(KEY)] for i, c in enumerate(ct))
-    if SCHEME == "salsa20":
-        from Crypto.Cipher import Salsa20
-        return Salsa20.new(key=KEY, nonce=nonce).decrypt(ct)
-    if SCHEME == "chacha20":
-        from Crypto.Cipher import ChaCha20
-        return ChaCha20.new(key=KEY, nonce=nonce).decrypt(ct)
-    if SCHEME == "aes-ctr":
-        from Crypto.Cipher import AES
-        from Crypto.Util import Counter
-        ctr = Counter.new(128, initial_value=int.from_bytes(nonce.ljust(16, b"\0"), "big"))
-        return AES.new(KEY, AES.MODE_CTR, counter=ctr).decrypt(ct)
-    raise SystemExit(f"unknown SCHEME {SCHEME!r}")
+def _mx(z, y, total, k, p, e):
+    return (((z >> 5 ^ (y << 2) & MASK) + (y >> 3 ^ (z << 4) & MASK))
+            ^ ((total ^ y) + (k[(p & 3) ^ e] ^ z))) & MASK
 
-def dec_field(s: str) -> str:
-    pt = stream_decrypt(b64d(s))
-    return pt.rstrip(b"\x00").decode("utf-8", "replace")
+def _xxtea_decrypt(v, k):
+    n = len(v)
+    rounds = 6 + 52 // n
+    total = (rounds * DELTA) & MASK
+    y = v[0]
+    for _ in range(rounds):
+        e = (total >> 2) & 3
+        for p in range(n - 1, 0, -1):
+            z = v[p - 1]
+            v[p] = (v[p] - _mx(z, y, total, k, p, e)) & MASK
+            y = v[p]
+        z = v[-1]
+        v[0] = (v[0] - _mx(z, y, total, k, 0, e)) & MASK
+        y = v[0]
+        total = (total - DELTA) & MASK
+    return v
 
-def main(inp, outp):
-    if KEY is None:
-        sys.exit("KEY not set. Recover it from libapp.so and edit this file. "
-                 "See FINDINGS.md.")
+_KWORDS = list(struct.unpack("<4I", KEY))
+
+def decrypt_field(s):
+    if not s:
+        return ""
+    data = b64d(s)
+    n = len(data) // 4
+    if n < 2:                                    # too short to be XXTEA-encoded
+        return data.rstrip(b"\x00").decode("utf-8", "replace")
+    v = list(struct.unpack("<%dI" % n, data))
+    _xxtea_decrypt(v, _KWORDS)
+    return struct.pack("<%dI" % n, *v).rstrip(b"\x00").decode("utf-8", "replace")
+
+def decrypt_file(inp, outp):
     d = json.load(open(inp))
     out = {}
     for pid, rec in d.items():
         r = dict(rec)
         for f in ("q", "a", "sa"):
-            if f in r and r[f]:
-                r[f] = dec_field(r[f])
+            if f in r:
+                r[f] = decrypt_field(r[f])
         out[pid] = r
     json.dump(out, open(outp, "w"), ensure_ascii=False, indent=2)
-    print(f"wrote {len(out)} decrypted records -> {outp}")
+    return out
+
+def write_csv(out, csv_path):
+    with open(csv_path, "w", newline="") as fh:
+        w = csv.writer(fh)
+        w.writerow(["id", "quote", "author", "source"])
+        for pid, r in out.items():
+            w.writerow([pid, r.get("q", ""), r.get("a", ""), r.get("sa", "")])
+
+def main():
+    if len(sys.argv) == 3:
+        out = decrypt_file(sys.argv[1], sys.argv[2])
+        print(f"{len(out)} records -> {sys.argv[2]}")
+        return
+    for inp in sorted(glob.glob(os.path.join(DATA, "*_encrypted*.json"))):
+        base = os.path.basename(inp).replace("_encrypted", "_decrypted")
+        outp = os.path.join(DATA, base)
+        out = decrypt_file(inp, outp)
+        csv_path = outp[:-5] + ".csv"
+        write_csv(out, csv_path)
+        print(f"{len(out):>5} records  {os.path.basename(inp)} -> "
+              f"{os.path.basename(outp)} + {os.path.basename(csv_path)}")
 
 if __name__ == "__main__":
-    inp = sys.argv[1] if len(sys.argv) > 1 else os.path.join(HERE, "..", "data", "puzzle_info_encrypted.json")
-    outp = sys.argv[2] if len(sys.argv) > 2 else os.path.join(HERE, "..", "data", "puzzle_info_decrypted.json")
-    main(inp, outp)
+    main()
