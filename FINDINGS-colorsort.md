@@ -91,16 +91,43 @@ Semantics verified on the decoded data:
   shipped class has 2 and is not version-tolerant, so the current game cannot load this
   file; it is a leftover. The decoder reads it anyway (`legacy_m2`, `legacy_m3`).
 
-## Level ordering (how the pool maps to the level number)
-`StandartLevelsController` holds three `ILevelProvider`s (standard, secret, "levels with
-mechanics") plus `IRandomLevelIndexProvider`s and constants
-`LevelsWithMechanicsFrequency = 3`, `LevelsWithMechanicsOffset = 1`,
-`Config.RANDOM_RANGE_BEFORE_LEVELS = 500`, `Config.RANDOM_TAKE_LEVELS_COUNT = 100`, and
-remote-config `SecretStandardModeStartLevel`. The exact index arithmetic is in native code
-(`get_CurrentLevelId` @ RVA 0x29CCFF8, `CalculateSecretLevelIndex` @ 0x29CE658,
-`RandomLevelsData.CalculateRandomLevelIndex`); decompiling those with REA/Ghidra is the
-next step. Until then, `data/colorsort/*.csv` is indexed by line number (`index`) and the
-designers' `internal_id`.
+## Level ordering (how a level number maps to the pools)
+Recovered by disassembling `StandartLevelsController`, `LevelControllerConfigurator`,
+`DefaultLevelProvider` and `StandardLevelsRandomIndexProvider` from `libil2cpp.so`
+(`extraction/il2cpp_disasm.py`, call targets named via Cpp2IL's `[Address]` map) and by
+parsing the serialized `LevelsConfig` / `StandartLevelsController` objects with UnityPy.
+
+- `LevelsConfig.standardLevelsJsonConfig` binds `baseConfig` → `game_competitors_merged_main_…_1111`,
+  `secretConfig` → `…_secret_…_371`, `levelsWithMechanicsConfig` → `ms-6 GC_Layout_fixed`.
+  `DefaultLevelProvider.GetLevelByIndex(i)` = `MemoryPackSerializer.Deserialize<LevelData>(FromBase64(lines[i]))`.
+- The controller keeps three saved ints: `CurrentLevelId` (the displayed level number, starts
+  at 1), `GlobalLevelId` (index into the main pool) and `NextLevelId`. `OnCompleteCurrentLevel`
+  does `CurrentLevelId++`; once the tutorial is over it sets `GlobalLevelId = NextLevelId++`
+  **on every completion, secret levels included**.
+- **Levels 1–4** are tutorial `LevelPreset` ScriptableObjects (the serialized controller has 4
+  `TutorialLevel {DefaultLevel, NewLevel}` entries), not lines from the TextAssets.
+- **Level N ≥ 5** loads main-pool line `N − 5` (`GlobalLevelId`). The pool's `InternalId`
+  equals N for every line (5…1115), which confirms the mapping.
+- **Secret levels**: `IsSecretMode(N) = N ≥ first && (N − first) % freq == 0` with
+  `Config.SecretStandardModeStartLevel` / `Frequency` fed by remote config
+  `secret_firstshow = 5`, `secret_levelsfrequency = 3` (defaults in
+  `assets/Config/remote_config_firebase_android.json`). Such a level is served from the secret
+  pool at index `(N − first) / freq` (`CalculateSecretLevelIndex`), and the main-pool line
+  for that N is skipped. So by default levels 5, 8, 11, … are secret levels 0, 1, 2, …
+- **After the main pool** (`GlobalLevelId ≥ 1111`): `LoadRandomLevel` →
+  `StandardLevelsRandomIndexProvider` built by `UpdateMainController` from the **last 500**
+  pool indexes (`Config.RANDOM_RANGE_BEFORE_LEVELS`). `SetupRandomLevels` shuffles the first
+  400 and the last 100 of those separately (`ListUtils.SortingPairs`, pairwise swaps with an
+  unseeded `System.Random`), concatenates them, and re-shuffles after 500 draws. With
+  `extended_random_levels_enabled = true` (remote, default false) the index set comes from
+  `standardExtraLevelsToRandom` instead and every third level (`N % 3 == 1`) may come from the
+  mechanics pool (`LoadRandomLevelWithMechanics`). Random picks are per device, so they are not
+  tabulated.
+- `TryLoadRemoteLevel` / `TryLoadOverridedLevel` run first and can replace any level with
+  remote-config content (`remote_levels`, `override_levels_id`), both empty by default.
+
+`data/colorsort/level_schedule.csv` (from `extraction/colorsort_schedule.py`) lists, for levels
+1–1115, the source pool, line index, `InternalId`, difficulty and the flask layout.
 
 ## Tooling in this repo
 - `extraction/colorsort_decode.py <dir of *_Binary.bytes> <out dir>` — MemoryPack decoder;
@@ -108,5 +135,9 @@ designers' `internal_id`.
   layout_id, level_type, rule_set, num_flasks, num_empty_flasks, num_colors, flask_capacity,
   flasks, first_moves_hint, hash`). In the `flasks` column each flask is
   `top,…,bottom/capacity[flags]`, `c*n` = run of n, `?` = hidden part, `-` = empty.
-- The raw `*_Binary.bytes` TextAssets are dumped from `assets/bin/Data` with UnityPy
-  (see the commands in this document's history) into `apk/work/levels_raw/` (git-ignored).
+- `extraction/colorsort_schedule.py` — level number → pool/line table (`data/colorsort/level_schedule.csv`).
+- `extraction/il2cpp_disasm.py` — capstone ARM64 disassembly of IL2CPP methods by name, with
+  `bl` targets resolved through Cpp2IL's `[Address]` attributes (`--use-processor attributeinjector`).
+- `extraction/il2cpp_xrefs.py` — finds callers of a method by scanning every `bl` in the binary.
+- The raw `*_Binary.bytes` TextAssets are dumped from `assets/bin/Data` with UnityPy into
+  `apk/work/levels_raw/` (git-ignored).
