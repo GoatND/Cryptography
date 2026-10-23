@@ -26,6 +26,20 @@ REA itself does no decompiling: it needs a caller-supplied engine. On this box t
 downloading Ghidra 12.1.4 (`GHIDRA_INSTALL_DIR`) and the jadx MCP jar (`REA_JADX_MCP_JAR`).
 Nothing in REA understands IL2CPP, so Cpp2IL was still required to name anything.
 
+How REA actually fared here:
+- `rea inspect-android-package base.apk` (jadx engine) worked: package, manifest, 61,589
+  classes, permissions, in about a minute.
+- `rea inspect` / `rea decompile` on `libil2cpp.so` (Ghidra engine) did not produce output.
+  The first run was killed by REA's 330 s startup deadline. A second run with
+  `REA_GHIDRA_STARTUP_TIMEOUT_MS=7000000` let Ghidra finish auto-analysis (about 100 minutes
+  on 4 cores with REA's fixed 2 GB JVM heap), but REA runs `analyzeHeadless` read-only, the
+  project was discarded ("Discarded file import due to readOnly option"), the bridge process
+  exited, and REA returned `cleanup_incomplete` with no decompilation and no snapshot. So
+  for a 102 MB IL2CPP binary the practical route was capstone + Cpp2IL addresses
+  (`extraction/il2cpp_disasm.py`), which is what the "Level ordering" section is based on.
+  Running Ghidra headless directly (own project, bigger heap) would work but is a separate,
+  multi-hour job.
+
 ## Where the levels are
 No level data is in the Addressables bundles (those hold wallpaper/flask skins only) and
 nothing is encrypted. Levels are **`TextAsset`s inside the serialized Unity data files**
