@@ -3,3 +3,5 @@ work/
 *.apk
 *.dex
 *.so
+__pycache__/
+*.pyc

@@ -1,0 +1,2863 @@
+[
+ {
+  "Flasks": [
+   {
+    "segments": [
+     {
+      "colorId": 0,
+      "size": 1,
+      "isSegmentPartsHidden": [
+       false
+      ],
+      "hiddenCount": 0,
+      "id": 0
+     },
+     {
+      "colorId": 2,
+      "size": 1,
+      "isSegmentPartsHidden": [
+       true
+      ],
+      "hiddenCount": 0,
+      "id": 0
+     },
+     {
+      "colorId": 1,
+      "size": 1,
+      "isSegmentPartsHidden": [
+       true
+      ],
+      "hiddenCount": 0,
+      "id": 0
+     },
+     {
+      "colorId": 5,
+      "size": 1,
+      "isSegmentPartsHidden": [
+       true
+      ],
+      "hiddenCount": 0,
+      "id": 0
+     }
+    ],
+    "maxSegmentsCount": 4,
+    "hiddenSegmentsCount": -1,
+    "lockByColor": -1,
+    "receiveOnly": false,
+    "isLockedByNeighbors": false,
+    "hiddenItemIndexes": [
+     0,
+     1,
+     2
+    ],
+    "receiveOnlyColorId": -1,
+    "lockByPosition": null,
+    "needFill": false
+   },
+   {
+    "segments": [
+     {
+      "colorId": 5,
+      "size": 1,
+      "isSegmentPartsHidden": [
+       false
+      ],
+      "hiddenCount": 0,
+      "id": 0
+     },
+     {
+      "colorId": 4,
+      "size": 1,
+      "isSegmentPartsHidden": [
+       true
+      ],
+      "hiddenCount": 0,
+      "id": 0
+     },
+     {
+      "colorId": 0,
+      "size": 1,
+      "isSegmentPartsHidden": [
+       true
+      ],
+      "hiddenCount": 0,
+      "id": 0
+     },
+     {
+      "colorId": 5,
+      "size": 1,
+      "isSegmentPartsHidden": [
+       true
+      ],
+      "hiddenCount": 0,
+      "id": 0
+     }
+    ],
+    "maxSegmentsCount": 4,
+    "hiddenSegmentsCount": -1,
+    "lockByColor": -1,
+    "receiveOnly": false,
+    "isLockedByNeighbors": false,
+    "hiddenItemIndexes": [
+     0,
+     1,
+     2
+    ],
+    "receiveOnlyColorId": -1,
+    "lockByPosition": null,
+    "needFill": false
+   },
+   {
+    "segments": [
+     {
+      "colorId": 3,
+      "size": 1,
+      "isSegmentPartsHidden": [
+       false
+      ],
+      "hiddenCount": 0,
+      "id": 0
+     },
+     {
+      "colorId": 0,
+      "size": 1,
+      "isSegmentPartsHidden": [
+       true
+      ],
+      "hiddenCount": 0,
+      "id": 0
+     },
+     {
+      "colorId": 2,
+      "size": 1,
+      "isSegmentPartsHidden": [
+       true
+      ],
+      "hiddenCount": 0,
+      "id": 0
+     },
+     {
+      "colorId": 4,
+      "size": 1,
+      "isSegmentPartsHidden": [
+       true
+      ],
+      "hiddenCount": 0,
+      "id": 0
+     }
+    ],
+    "maxSegmentsCount": 4,
+    "hiddenSegmentsCount": -1,
+    "lockByColor": -1,
+    "receiveOnly": false,
+    "isLockedByNeighbors": false,
+    "hiddenItemIndexes": [
+     0,
+     1,
+     2
+    ],
+    "receiveOnlyColorId": -1,
+    "lockByPosition": null,
+    "needFill": false
+   },
+   {
+    "segments": [
+     {
+      "colorId": 5,
+      "size": 1,
+      "isSegmentPartsHidden": [
+       false
+      ],
+      "hiddenCount": 0,
+      "id": 0
+     },
+     {
+      "colorId": 2,
+      "size": 1,
+      "isSegmentPartsHidden": [
+       true
+      ],
+      "hiddenCount": 0,
+      "id": 0
+     },
+     {
+      "colorId": 7,
+      "size": 1,
+      "isSegmentPartsHidden": [
+       true
+      ],
+      "hiddenCount": 0,
+      "id": 0
+     },
+     {
+      "colorId": 3,
+      "size": 1,
+      "isSegmentPartsHidden": [
+       true
+      ],
+      "hiddenCount": 0,
+      "id": 0
+     }
+    ],
+    "maxSegmentsCount": 4,
+    "hiddenSegmentsCount": -1,
+    "lockByColor": -1,
+    "receiveOnly": false,
+    "isLockedByNeighbors": false,
+    "hiddenItemIndexes": [
+     0,
+     1,
+     2
+    ],
+    "receiveOnlyColorId": -1,
+    "lockByPosition": null,
+    "needFill": false
+   },
+   {
+    "segments": [
+     {
+      "colorId": 4,
+      "size": 1,
+      "isSegmentPartsHidden": [
+       false
+      ],
+      "hiddenCount": 0,
+      "id": 0
+     },
+     {
+      "colorId": 6,
+      "size": 1,
+      "isSegmentPartsHidden": [
+       true
+      ],
+      "hiddenCount": 0,
+      "id": 0
+     },
+     {
+      "colorId": 1,
+      "size": 1,
+      "isSegmentPartsHidden": [
+       true
+      ],
+      "hiddenCount": 0,
+      "id": 0
+     },
+     {
+      "colorId": 3,
+      "size": 1,
+      "isSegmentPartsHidden": [
+       true
+      ],
+      "hiddenCount": 0,
+      "id": 0
+     }
+    ],
+    "maxSegmentsCount": 4,
+    "hiddenSegmentsCount": -1,
+    "lockByColor": -1,
+    "receiveOnly": false,
+    "isLockedByNeighbors": false,
+    "hiddenItemIndexes": [
+     0,
+     1,
+     2
+    ],
+    "receiveOnlyColorId": -1,
+    "lockByPosition": null,
+    "needFill": false
+   },
+   {
+    "segments": [
+     {
+      "colorId": 5,
+      "size": 1,
+      "isSegmentPartsHidden": [
+       false
+      ],
+      "hiddenCount": 0,
+      "id": 0
+     },
+     {
+      "colorId": 2,
+      "size": 1,
+      "isSegmentPartsHidden": [
+       true
+      ],
+      "hiddenCount": 0,
+      "id": 0
+     },
+     {
+      "colorId": 3,
+      "size": 1,
+      "isSegmentPartsHidden": [
+       true
+      ],
+      "hiddenCount": 0,
+      "id": 0
+     },
+     {
+      "colorId": 0,
+      "size": 1,
+      "isSegmentPartsHidden": [
+       true
+      ],
+      "hiddenCount": 0,
+      "id": 0
+     }
+    ],
+    "maxSegmentsCount": 4,
+    "hiddenSegmentsCount": -1,
+    "lockByColor": -1,
+    "receiveOnly": false,
+    "isLockedByNeighbors": false,
+    "hiddenItemIndexes": [
+     0,
+     1,
+     2
+    ],
+    "receiveOnlyColorId": -1,
+    "lockByPosition": null,
+    "needFill": false
+   },
+   {
+    "segments": [
+     {
+      "colorId": 2,
+      "size": 1,
+      "isSegmentPartsHidden": [
+       false
+      ],
+      "hiddenCount": 0,
+      "id": 0
+     },
+     {
+      "colorId": 6,
+      "size": 1,
+      "isSegmentPartsHidden": [
+       true
+      ],
+      "hiddenCount": 0,
+      "id": 0
+     },
+     {
+      "colorId": 0,
+      "size": 2,
+      "isSegmentPartsHidden": [
+       true,
+       true
+      ],
+      "hiddenCount": 0,
+      "id": 0
+     }
+    ],
+    "maxSegmentsCount": 4,
+    "hiddenSegmentsCount": -1,
+    "lockByColor": -1,
+    "receiveOnly": false,
+    "isLockedByNeighbors": false,
+    "hiddenItemIndexes": [
+     0,
+     1,
+     2
+    ],
+    "receiveOnlyColorId": -1,
+    "lockByPosition": null,
+    "needFill": false
+   },
+   {
+    "segments": [
+     {
+      "colorId": 7,
+      "size": 1,
+      "isSegmentPartsHidden": [
+       false
+      ],
+      "hiddenCount": 0,
+      "id": 0
+     },
+     {
+      "colorId": 5,
+      "size": 1,
+      "isSegmentPartsHidden": [
+       true
+      ],
+      "hiddenCount": 0,
+      "id": 0
+     },
+     {
+      "colorId": 3,
+      "size": 1,
+      "isSegmentPartsHidden": [
+       true
+      ],
+      "hiddenCount": 0,
+      "id": 0
+     },
+     {
+      "colorId": 6,
+      "size": 1,
+      "isSegmentPartsHidden": [
+       true
+      ],
+      "hiddenCount": 0,
+      "id": 0
+     }
+    ],
+    "maxSegmentsCount": 4,
+    "hiddenSegmentsCount": -1,
+    "lockByColor": -1,
+    "receiveOnly": false,
+    "isLockedByNeighbors": false,
+    "hiddenItemIndexes": [
+     0,
+     1,
+     2
+    ],
+    "receiveOnlyColorId": -1,
+    "lockByPosition": null,
+    "needFill": false
+   },
+   {
+    "segments": [
+     {
+      "colorId": 3,
+      "size": 1,
+      "isSegmentPartsHidden": [
+       false
+      ],
+      "hiddenCount": 0,
+      "id": 0
+     },
+     {
+      "colorId": 5,
+      "size": 1,
+      "isSegmentPartsHidden": [
+       true
+      ],
+      "hiddenCount": 0,
+      "id": 0
+     },
+     {
+      "colorId": 1,
+      "size": 1,
+      "isSegmentPartsHidden": [
+       true
+      ],
+      "hiddenCount": 0,
+      "id": 0
+     },
+     {
+      "colorId": 7,
+      "size": 1,
+      "isSegmentPartsHidden": [
+       true
+      ],
+      "hiddenCount": 0,
+      "id": 0
+     }
+    ],
+    "maxSegmentsCount": 4,
+    "hiddenSegmentsCount": -1,
+    "lockByColor": -1,
+    "receiveOnly": false,
+    "isLockedByNeighbors": false,
+    "hiddenItemIndexes": [
+     0,
+     1,
+     2
+    ],
+    "receiveOnlyColorId": -1,
+    "lockByPosition": null,
+    "needFill": false
+   },
+   {
+    "segments": [
+     {
+      "colorId": 5,
+      "size": 2,
+      "isSegmentPartsHidden": null,
+      "hiddenCount": 0,
+      "id": 0
+     }
+    ],
+    "maxSegmentsCount": 14,
+    "hiddenSegmentsCount": -1,
+    "lockByColor": -1,
+    "receiveOnly": true,
+    "isLockedByNeighbors": false,
+    "hiddenItemIndexes": null,
+    "receiveOnlyColorId": -1,
+    "lockByPosition": null,
+    "needFill": true
+   },
+   {
+    "segments": [
+     {
+      "colorId": 1,
+      "size": 1,
+      "isSegmentPartsHidden": [
+       false
+      ],
+      "hiddenCount": 0,
+      "id": 0
+     },
+     {
+      "colorId": 5,
+      "size": 1,
+      "isSegmentPartsHidden": [
+       true
+      ],
+      "hiddenCount": 0,
+      "id": 0
+     },
+     {
+      "colorId": 0,
+      "size": 2,
+      "isSegmentPartsHidden": [
+       true,
+       true
+      ],
+      "hiddenCount": 0,
+      "id": 0
+     }
+    ],
+    "maxSegmentsCount": 4,
+    "hiddenSegmentsCount": -1,
+    "lockByColor": -1,
+    "receiveOnly": false,
+    "isLockedByNeighbors": false,
+    "hiddenItemIndexes": [
+     0,
+     1,
+     2
+    ],
+    "receiveOnlyColorId": -1,
+    "lockByPosition": null,
+    "needFill": false
+   },
+   {
+    "segments": [
+     {
+      "colorId": 4,
+      "size": 1,
+      "isSegmentPartsHidden": [
+       false
+      ],
+      "hiddenCount": 0,
+      "id": 0
+     },
+     {
+      "colorId": 7,
+      "size": 1,
+      "isSegmentPartsHidden": [
+       true
+      ],
+      "hiddenCount": 0,
+      "id": 0
+     },
+     {
+      "colorId": 6,
+      "size": 1,
+      "isSegmentPartsHidden": [
+       true
+      ],
+      "hiddenCount": 0,
+      "id": 0
+     },
+     {
+      "colorId": 5,
+      "size": 1,
+      "isSegmentPartsHidden": [
+       true
+      ],
+      "hiddenCount": 0,
+      "id": 0
+     }
+    ],
+    "maxSegmentsCount": 4,
+    "hiddenSegmentsCount": -1,
+    "lockByColor": -1,
+    "receiveOnly": false,
+    "isLockedByNeighbors": false,
+    "hiddenItemIndexes": [
+     0,
+     1,
+     2
+    ],
+    "receiveOnlyColorId": -1,
+    "lockByPosition": null,
+    "needFill": false
+   },
+   {
+    "segments": [
+     {
+      "colorId": 1,
+      "size": 1,
+      "isSegmentPartsHidden": [
+       false
+      ],
+      "hiddenCount": 0,
+      "id": 0
+     },
+     {
+      "colorId": 5,
+      "size": 1,
+      "isSegmentPartsHidden": [
+       true
+      ],
+      "hiddenCount": 0,
+      "id": 0
+     },
+     {
+      "colorId": 7,
+      "size": 2,
+      "isSegmentPartsHidden": [
+       true,
+       true
+      ],
+      "hiddenCount": 0,
+      "id": 0
+     }
+    ],
+    "maxSegmentsCount": 4,
+    "hiddenSegmentsCount": -1,
+    "lockByColor": -1,
+    "receiveOnly": false,
+    "isLockedByNeighbors": false,
+    "hiddenItemIndexes": [
+     0,
+     1,
+     2
+    ],
+    "receiveOnlyColorId": -1,
+    "lockByPosition": null,
+    "needFill": false
+   },
+   {
+    "segments": [
+     {
+      "colorId": 2,
+      "size": 1,
+      "isSegmentPartsHidden": [
+       false
+      ],
+      "hiddenCount": 0,
+      "id": 0
+     },
+     {
+      "colorId": 6,
+      "size": 1,
+      "isSegmentPartsHidden": [
+       true
+      ],
+      "hiddenCount": 0,
+      "id": 0
+     },
+     {
+      "colorId": 4,
+      "size": 1,
+      "isSegmentPartsHidden": [
+       true
+      ],
+      "hiddenCount": 0,
+      "id": 0
+     },
+     {
+      "colorId": 1,
+      "size": 1,
+      "isSegmentPartsHidden": [
+       true
+      ],
+      "hiddenCount": 0,
+      "id": 0
+     }
+    ],
+    "maxSegmentsCount": 4,
+    "hiddenSegmentsCount": -1,
+    "lockByColor": -1,
+    "receiveOnly": false,
+    "isLockedByNeighbors": false,
+    "hiddenItemIndexes": [
+     0,
+     1,
+     2
+    ],
+    "receiveOnlyColorId": -1,
+    "lockByPosition": null,
+    "needFill": false
+   },
+   {
+    "segments": [
+     {
+      "colorId": 5,
+      "size": 1,
+      "isSegmentPartsHidden": [
+       false
+      ],
+      "hiddenCount": 0,
+      "id": 0
+     },
+     {
+      "colorId": 4,
+      "size": 1,
+      "isSegmentPartsHidden": [
+       true
+      ],
+      "hiddenCount": 0,
+      "id": 0
+     },
+     {
+      "colorId": 3,
+      "size": 1,
+      "isSegmentPartsHidden": [
+       true
+      ],
+      "hiddenCount": 0,
+      "id": 0
+     },
+     {
+      "colorId": 6,
+      "size": 1,
+      "isSegmentPartsHidden": [
+       true
+      ],
+      "hiddenCount": 0,
+      "id": 0
+     }
+    ],
+    "maxSegmentsCount": 4,
+    "hiddenSegmentsCount": -1,
+    "lockByColor": -1,
+    "receiveOnly": false,
+    "isLockedByNeighbors": false,
+    "hiddenItemIndexes": [
+     0,
+     1,
+     2
+    ],
+    "receiveOnlyColorId": -1,
+    "lockByPosition": null,
+    "needFill": false
+   },
+   {
+    "segments": [
+     {
+      "colorId": 0,
+      "size": 2,
+      "isSegmentPartsHidden": [
+       false,
+       true
+      ],
+      "hiddenCount": 0,
+      "id": 0
+     },
+     {
+      "colorId": 4,
+      "size": 1,
+      "isSegmentPartsHidden": [
+       true
+      ],
+      "hiddenCount": 0,
+      "id": 0
+     },
+     {
+      "colorId": 0,
+      "size": 1,
+      "isSegmentPartsHidden": [
+       true
+      ],
+      "hiddenCount": 0,
+      "id": 0
+     }
+    ],
+    "maxSegmentsCount": 4,
+    "hiddenSegmentsCount": -1,
+    "lockByColor": -1,
+    "receiveOnly": false,
+    "isLockedByNeighbors": false,
+    "hiddenItemIndexes": [
+     0,
+     1,
+     2
+    ],
+    "receiveOnlyColorId": -1,
+    "lockByPosition": null,
+    "needFill": false
+   },
+   {
+    "segments": [
+     {
+      "colorId": 1,
+      "size": 1,
+      "isSegmentPartsHidden": [
+       false
+      ],
+      "hiddenCount": 0,
+      "id": 0
+     },
+     {
+      "colorId": 4,
+      "size": 1,
+      "isSegmentPartsHidden": [
+       true
+      ],
+      "hiddenCount": 0,
+      "id": 0
+     },
+     {
+      "colorId": 5,
+      "size": 1,
+      "isSegmentPartsHidden": [
+       true
+      ],
+      "hiddenCount": 0,
+      "id": 0
+     },
+     {
+      "colorId": 6,
+      "size": 1,
+      "isSegmentPartsHidden": [
+       true
+      ],
+      "hiddenCount": 0,
+      "id": 0
+     }
+    ],
+    "maxSegmentsCount": 4,
+    "hiddenSegmentsCount": -1,
+    "lockByColor": -1,
+    "receiveOnly": false,
+    "isLockedByNeighbors": false,
+    "hiddenItemIndexes": [
+     0,
+     1,
+     2
+    ],
+    "receiveOnlyColorId": -1,
+    "lockByPosition": null,
+    "needFill": false
+   },
+   {
+    "segments": [
+     {
+      "colorId": 3,
+      "size": 1,
+      "isSegmentPartsHidden": [
+       false
+      ],
+      "hiddenCount": 0,
+      "id": 0
+     },
+     {
+      "colorId": 2,
+      "size": 1,
+      "isSegmentPartsHidden": [
+       true
+      ],
+      "hiddenCount": 0,
+      "id": 0
+     },
+     {
+      "colorId": 7,
+      "size": 1,
+      "isSegmentPartsHidden": [
+       true
+      ],
+      "hiddenCount": 0,
+      "id": 0
+     },
+     {
+      "colorId": 1,
+      "size": 1,
+      "isSegmentPartsHidden": [
+       true
+      ],
+      "hiddenCount": 0,
+      "id": 0
+     }
+    ],
+    "maxSegmentsCount": 4,
+    "hiddenSegmentsCount": -1,
+    "lockByColor": -1,
+    "receiveOnly": false,
+    "isLockedByNeighbors": false,
+    "hiddenItemIndexes": [
+     0,
+     1,
+     2
+    ],
+    "receiveOnlyColorId": -1,
+    "lockByPosition": null,
+    "needFill": false
+   },
+   {
+    "segments": [
+     {
+      "colorId": 6,
+      "size": 1,
+      "isSegmentPartsHidden": [
+       false
+      ],
+      "hiddenCount": 0,
+      "id": 0
+     },
+     {
+      "colorId": 7,
+      "size": 1,
+      "isSegmentPartsHidden": [
+       true
+      ],
+      "hiddenCount": 0,
+      "id": 0
+     },
+     {
+      "colorId": 0,
+      "size": 1,
+      "isSegmentPartsHidden": [
+       true
+      ],
+      "hiddenCount": 0,
+      "id": 0
+     },
+     {
+      "colorId": 2,
+      "size": 1,
+      "isSegmentPartsHidden": [
+       true
+      ],
+      "hiddenCount": 0,
+      "id": 0
+     }
+    ],
+    "maxSegmentsCount": 4,
+    "hiddenSegmentsCount": -1,
+    "lockByColor": -1,
+    "receiveOnly": false,
+    "isLockedByNeighbors": false,
+    "hiddenItemIndexes": [
+     0,
+     1,
+     2
+    ],
+    "receiveOnlyColorId": -1,
+    "lockByPosition": null,
+    "needFill": false
+   }
+  ],
+  "FirstMovesHint": [
+   {
+    "colorId": 5,
+    "size": 1,
+    "isSegmentPartsHidden": null,
+    "hiddenCount": 0,
+    "id": 0
+   },
+   {
+    "colorId": 4,
+    "size": 1,
+    "isSegmentPartsHidden": null,
+    "hiddenCount": 0,
+    "id": 0
+   }
+  ],
+  "DifficultyCategory": 1,
+  "InternalId": 1,
+  "Layout": 0,
+  "Hash": "13741c1717b0879b72250c355045a5c7b3527d66c2dcf9a4ce070069e678d527",
+  "LevelType": 0,
+  "RuleSet": 1,
+  "LayoutId": "DC_18_1_OWL",
+  "LevelTypeName": "Default",
+  "RuleSetName": "IndependentColors",
+  "index": 0
+ },
+ {
+  "Flasks": [
+   {
+    "segments": [
+     {
+      "colorId": 6,
+      "size": 1,
+      "isSegmentPartsHidden": [
+       false
+      ],
+      "hiddenCount": 0,
+      "id": 0
+     },
+     {
+      "colorId": 5,
+      "size": 1,
+      "isSegmentPartsHidden": [
+       true
+      ],
+      "hiddenCount": 0,
+      "id": 0
+     },
+     {
+      "colorId": 2,
+      "size": 1,
+      "isSegmentPartsHidden": [
+       true
+      ],
+      "hiddenCount": 0,
+      "id": 0
+     },
+     {
+      "colorId": 7,
+      "size": 1,
+      "isSegmentPartsHidden": [
+       true
+      ],
+      "hiddenCount": 0,
+      "id": 0
+     }
+    ],
+    "maxSegmentsCount": 4,
+    "hiddenSegmentsCount": -1,
+    "lockByColor": -1,
+    "receiveOnly": false,
+    "isLockedByNeighbors": false,
+    "hiddenItemIndexes": [
+     0,
+     1,
+     2
+    ],
+    "receiveOnlyColorId": -1,
+    "lockByPosition": null,
+    "needFill": false
+   },
+   {
+    "segments": [
+     {
+      "colorId": 7,
+      "size": 1,
+      "isSegmentPartsHidden": [
+       false
+      ],
+      "hiddenCount": 0,
+      "id": 0
+     },
+     {
+      "colorId": 4,
+      "size": 1,
+      "isSegmentPartsHidden": [
+       true
+      ],
+      "hiddenCount": 0,
+      "id": 0
+     },
+     {
+      "colorId": 7,
+      "size": 1,
+      "isSegmentPartsHidden": [
+       true
+      ],
+      "hiddenCount": 0,
+      "id": 0
+     },
+     {
+      "colorId": 2,
+      "size": 1,
+      "isSegmentPartsHidden": [
+       true
+      ],
+      "hiddenCount": 0,
+      "id": 0
+     }
+    ],
+    "maxSegmentsCount": 4,
+    "hiddenSegmentsCount": -1,
+    "lockByColor": -1,
+    "receiveOnly": false,
+    "isLockedByNeighbors": false,
+    "hiddenItemIndexes": [
+     0,
+     1,
+     2
+    ],
+    "receiveOnlyColorId": -1,
+    "lockByPosition": null,
+    "needFill": false
+   },
+   {
+    "segments": [
+     {
+      "colorId": 0,
+      "size": 1,
+      "isSegmentPartsHidden": [
+       false
+      ],
+      "hiddenCount": 0,
+      "id": 0
+     },
+     {
+      "colorId": 3,
+      "size": 1,
+      "isSegmentPartsHidden": [
+       true
+      ],
+      "hiddenCount": 0,
+      "id": 0
+     },
+     {
+      "colorId": 7,
+      "size": 1,
+      "isSegmentPartsHidden": [
+       true
+      ],
+      "hiddenCount": 0,
+      "id": 0
+     },
+     {
+      "colorId": 3,
+      "size": 1,
+      "isSegmentPartsHidden": [
+       true
+      ],
+      "hiddenCount": 0,
+      "id": 0
+     }
+    ],
+    "maxSegmentsCount": 4,
+    "hiddenSegmentsCount": -1,
+    "lockByColor": -1,
+    "receiveOnly": false,
+    "isLockedByNeighbors": false,
+    "hiddenItemIndexes": [
+     0,
+     1,
+     2
+    ],
+    "receiveOnlyColorId": -1,
+    "lockByPosition": null,
+    "needFill": false
+   },
+   {
+    "segments": [
+     {
+      "colorId": 0,
+      "size": 1,
+      "isSegmentPartsHidden": [
+       false
+      ],
+      "hiddenCount": 0,
+      "id": 0
+     },
+     {
+      "colorId": 1,
+      "size": 1,
+      "isSegmentPartsHidden": [
+       true
+      ],
+      "hiddenCount": 0,
+      "id": 0
+     },
+     {
+      "colorId": 0,
+      "size": 1,
+      "isSegmentPartsHidden": [
+       true
+      ],
+      "hiddenCount": 0,
+      "id": 0
+     },
+     {
+      "colorId": 7,
+      "size": 1,
+      "isSegmentPartsHidden": [
+       true
+      ],
+      "hiddenCount": 0,
+      "id": 0
+     }
+    ],
+    "maxSegmentsCount": 4,
+    "hiddenSegmentsCount": -1,
+    "lockByColor": -1,
+    "receiveOnly": false,
+    "isLockedByNeighbors": false,
+    "hiddenItemIndexes": [
+     0,
+     1,
+     2
+    ],
+    "receiveOnlyColorId": -1,
+    "lockByPosition": null,
+    "needFill": false
+   },
+   {
+    "segments": [
+     {
+      "colorId": 3,
+      "size": 1,
+      "isSegmentPartsHidden": [
+       false
+      ],
+      "hiddenCount": 0,
+      "id": 0
+     },
+     {
+      "colorId": 5,
+      "size": 1,
+      "isSegmentPartsHidden": [
+       true
+      ],
+      "hiddenCount": 0,
+      "id": 0
+     },
+     {
+      "colorId": 3,
+      "size": 1,
+      "isSegmentPartsHidden": [
+       true
+      ],
+      "hiddenCount": 0,
+      "id": 0
+     },
+     {
+      "colorId": 0,
+      "size": 1,
+      "isSegmentPartsHidden": [
+       true
+      ],
+      "hiddenCount": 0,
+      "id": 0
+     }
+    ],
+    "maxSegmentsCount": 4,
+    "hiddenSegmentsCount": -1,
+    "lockByColor": -1,
+    "receiveOnly": false,
+    "isLockedByNeighbors": false,
+    "hiddenItemIndexes": [
+     0,
+     1,
+     2
+    ],
+    "receiveOnlyColorId": -1,
+    "lockByPosition": null,
+    "needFill": false
+   },
+   {
+    "segments": [
+     {
+      "colorId": 6,
+      "size": 2,
+      "isSegmentPartsHidden": [
+       false,
+       true
+      ],
+      "hiddenCount": 0,
+      "id": 0
+     },
+     {
+      "colorId": 3,
+      "size": 1,
+      "isSegmentPartsHidden": [
+       true
+      ],
+      "hiddenCount": 0,
+      "id": 0
+     },
+     {
+      "colorId": 4,
+      "size": 1,
+      "isSegmentPartsHidden": [
+       true
+      ],
+      "hiddenCount": 0,
+      "id": 0
+     }
+    ],
+    "maxSegmentsCount": 4,
+    "hiddenSegmentsCount": -1,
+    "lockByColor": -1,
+    "receiveOnly": false,
+    "isLockedByNeighbors": false,
+    "hiddenItemIndexes": [
+     0,
+     1,
+     2
+    ],
+    "receiveOnlyColorId": -1,
+    "lockByPosition": null,
+    "needFill": false
+   },
+   {
+    "segments": [
+     {
+      "colorId": 0,
+      "size": 2,
+      "isSegmentPartsHidden": [
+       false,
+       true
+      ],
+      "hiddenCount": 0,
+      "id": 0
+     },
+     {
+      "colorId": 1,
+      "size": 2,
+      "isSegmentPartsHidden": [
+       true,
+       true
+      ],
+      "hiddenCount": 0,
+      "id": 0
+     }
+    ],
+    "maxSegmentsCount": 4,
+    "hiddenSegmentsCount": -1,
+    "lockByColor": -1,
+    "receiveOnly": false,
+    "isLockedByNeighbors": false,
+    "hiddenItemIndexes": [
+     0,
+     1,
+     2
+    ],
+    "receiveOnlyColorId": -1,
+    "lockByPosition": null,
+    "needFill": false
+   },
+   {
+    "segments": [
+     {
+      "colorId": 4,
+      "size": 1,
+      "isSegmentPartsHidden": [
+       false
+      ],
+      "hiddenCount": 0,
+      "id": 0
+     },
+     {
+      "colorId": 5,
+      "size": 1,
+      "isSegmentPartsHidden": [
+       true
+      ],
+      "hiddenCount": 0,
+      "id": 0
+     },
+     {
+      "colorId": 7,
+      "size": 1,
+      "isSegmentPartsHidden": [
+       true
+      ],
+      "hiddenCount": 0,
+      "id": 0
+     },
+     {
+      "colorId": 1,
+      "size": 1,
+      "isSegmentPartsHidden": [
+       true
+      ],
+      "hiddenCount": 0,
+      "id": 0
+     }
+    ],
+    "maxSegmentsCount": 4,
+    "hiddenSegmentsCount": -1,
+    "lockByColor": -1,
+    "receiveOnly": false,
+    "isLockedByNeighbors": false,
+    "hiddenItemIndexes": [
+     0,
+     1,
+     2
+    ],
+    "receiveOnlyColorId": -1,
+    "lockByPosition": null,
+    "needFill": false
+   },
+   {
+    "segments": [
+     {
+      "colorId": 5,
+      "size": 1,
+      "isSegmentPartsHidden": [
+       false
+      ],
+      "hiddenCount": 0,
+      "id": 0
+     },
+     {
+      "colorId": 6,
+      "size": 1,
+      "isSegmentPartsHidden": [
+       true
+      ],
+      "hiddenCount": 0,
+      "id": 0
+     },
+     {
+      "colorId": 3,
+      "size": 1,
+      "isSegmentPartsHidden": [
+       true
+      ],
+      "hiddenCount": 0,
+      "id": 0
+     },
+     {
+      "colorId": 0,
+      "size": 1,
+      "isSegmentPartsHidden": [
+       true
+      ],
+      "hiddenCount": 0,
+      "id": 0
+     }
+    ],
+    "maxSegmentsCount": 4,
+    "hiddenSegmentsCount": -1,
+    "lockByColor": -1,
+    "receiveOnly": false,
+    "isLockedByNeighbors": false,
+    "hiddenItemIndexes": [
+     0,
+     1,
+     2
+    ],
+    "receiveOnlyColorId": -1,
+    "lockByPosition": null,
+    "needFill": false
+   },
+   {
+    "segments": [
+     {
+      "colorId": 1,
+      "size": 2,
+      "isSegmentPartsHidden": null,
+      "hiddenCount": 0,
+      "id": 0
+     }
+    ],
+    "maxSegmentsCount": 14,
+    "hiddenSegmentsCount": -1,
+    "lockByColor": -1,
+    "receiveOnly": true,
+    "isLockedByNeighbors": false,
+    "hiddenItemIndexes": null,
+    "receiveOnlyColorId": -1,
+    "lockByPosition": null,
+    "needFill": true
+   },
+   {
+    "segments": [
+     {
+      "colorId": 2,
+      "size": 1,
+      "isSegmentPartsHidden": [
+       false
+      ],
+      "hiddenCount": 0,
+      "id": 0
+     },
+     {
+      "colorId": 5,
+      "size": 1,
+      "isSegmentPartsHidden": [
+       true
+      ],
+      "hiddenCount": 0,
+      "id": 0
+     },
+     {
+      "colorId": 0,
+      "size": 1,
+      "isSegmentPartsHidden": [
+       true
+      ],
+      "hiddenCount": 0,
+      "id": 0
+     },
+     {
+      "colorId": 5,
+      "size": 1,
+      "isSegmentPartsHidden": [
+       true
+      ],
+      "hiddenCount": 0,
+      "id": 0
+     }
+    ],
+    "maxSegmentsCount": 4,
+    "hiddenSegmentsCount": -1,
+    "lockByColor": -1,
+    "receiveOnly": false,
+    "isLockedByNeighbors": false,
+    "hiddenItemIndexes": [
+     0,
+     1,
+     2
+    ],
+    "receiveOnlyColorId": -1,
+    "lockByPosition": null,
+    "needFill": false
+   },
+   {
+    "segments": [
+     {
+      "colorId": 1,
+      "size": 1,
+      "isSegmentPartsHidden": [
+       false
+      ],
+      "hiddenCount": 0,
+      "id": 0
+     },
+     {
+      "colorId": 2,
+      "size": 1,
+      "isSegmentPartsHidden": [
+       true
+      ],
+      "hiddenCount": 0,
+      "id": 0
+     },
+     {
+      "colorId": 1,
+      "size": 1,
+      "isSegmentPartsHidden": [
+       true
+      ],
+      "hiddenCount": 0,
+      "id": 0
+     },
+     {
+      "colorId": 4,
+      "size": 1,
+      "isSegmentPartsHidden": [
+       true
+      ],
+      "hiddenCount": 0,
+      "id": 0
+     }
+    ],
+    "maxSegmentsCount": 4,
+    "hiddenSegmentsCount": -1,
+    "lockByColor": -1,
+    "receiveOnly": false,
+    "isLockedByNeighbors": false,
+    "hiddenItemIndexes": [
+     0,
+     1,
+     2
+    ],
+    "receiveOnlyColorId": -1,
+    "lockByPosition": null,
+    "needFill": false
+   },
+   {
+    "segments": [
+     {
+      "colorId": 1,
+      "size": 1,
+      "isSegmentPartsHidden": [
+       false
+      ],
+      "hiddenCount": 0,
+      "id": 0
+     },
+     {
+      "colorId": 3,
+      "size": 1,
+      "isSegmentPartsHidden": [
+       true
+      ],
+      "hiddenCount": 0,
+      "id": 0
+     },
+     {
+      "colorId": 1,
+      "size": 1,
+      "isSegmentPartsHidden": [
+       true
+      ],
+      "hiddenCount": 0,
+      "id": 0
+     },
+     {
+      "colorId": 2,
+      "size": 1,
+      "isSegmentPartsHidden": [
+       true
+      ],
+      "hiddenCount": 0,
+      "id": 0
+     }
+    ],
+    "maxSegmentsCount": 4,
+    "hiddenSegmentsCount": -1,
+    "lockByColor": -1,
+    "receiveOnly": false,
+    "isLockedByNeighbors": false,
+    "hiddenItemIndexes": [
+     0,
+     1,
+     2
+    ],
+    "receiveOnlyColorId": -1,
+    "lockByPosition": null,
+    "needFill": false
+   },
+   {
+    "segments": [
+     {
+      "colorId": 1,
+      "size": 1,
+      "isSegmentPartsHidden": [
+       false
+      ],
+      "hiddenCount": 0,
+      "id": 0
+     },
+     {
+      "colorId": 2,
+      "size": 2,
+      "isSegmentPartsHidden": [
+       true,
+       true
+      ],
+      "hiddenCount": 0,
+      "id": 0
+     },
+     {
+      "colorId": 1,
+      "size": 1,
+      "isSegmentPartsHidden": [
+       true
+      ],
+      "hiddenCount": 0,
+      "id": 0
+     }
+    ],
+    "maxSegmentsCount": 4,
+    "hiddenSegmentsCount": -1,
+    "lockByColor": -1,
+    "receiveOnly": false,
+    "isLockedByNeighbors": false,
+    "hiddenItemIndexes": [
+     0,
+     1,
+     2
+    ],
+    "receiveOnlyColorId": -1,
+    "lockByPosition": null,
+    "needFill": false
+   },
+   {
+    "segments": [
+     {
+      "colorId": 6,
+      "size": 3,
+      "isSegmentPartsHidden": [
+       false,
+       true,
+       true
+      ],
+      "hiddenCount": 0,
+      "id": 0
+     },
+     {
+      "colorId": 4,
+      "size": 1,
+      "isSegmentPartsHidden": [
+       true
+      ],
+      "hiddenCount": 0,
+      "id": 0
+     }
+    ],
+    "maxSegmentsCount": 4,
+    "hiddenSegmentsCount": -1,
+    "lockByColor": -1,
+    "receiveOnly": false,
+    "isLockedByNeighbors": false,
+    "hiddenItemIndexes": [
+     0,
+     1,
+     2
+    ],
+    "receiveOnlyColorId": -1,
+    "lockByPosition": null,
+    "needFill": false
+   },
+   {
+    "segments": [
+     {
+      "colorId": 2,
+      "size": 1,
+      "isSegmentPartsHidden": [
+       false
+      ],
+      "hiddenCount": 0,
+      "id": 0
+     },
+     {
+      "colorId": 5,
+      "size": 1,
+      "isSegmentPartsHidden": [
+       true
+      ],
+      "hiddenCount": 0,
+      "id": 0
+     },
+     {
+      "colorId": 0,
+      "size": 2,
+      "isSegmentPartsHidden": [
+       true,
+       true
+      ],
+      "hiddenCount": 0,
+      "id": 0
+     }
+    ],
+    "maxSegmentsCount": 4,
+    "hiddenSegmentsCount": -1,
+    "lockByColor": -1,
+    "receiveOnly": false,
+    "isLockedByNeighbors": false,
+    "hiddenItemIndexes": [
+     0,
+     1,
+     2
+    ],
+    "receiveOnlyColorId": -1,
+    "lockByPosition": null,
+    "needFill": false
+   },
+   {
+    "segments": [
+     {
+      "colorId": 0,
+      "size": 1,
+      "isSegmentPartsHidden": [
+       false
+      ],
+      "hiddenCount": 0,
+      "id": 0
+     },
+     {
+      "colorId": 4,
+      "size": 2,
+      "isSegmentPartsHidden": [
+       true,
+       true
+      ],
+      "hiddenCount": 0,
+      "id": 0
+     },
+     {
+      "colorId": 7,
+      "size": 1,
+      "isSegmentPartsHidden": [
+       true
+      ],
+      "hiddenCount": 0,
+      "id": 0
+     }
+    ],
+    "maxSegmentsCount": 4,
+    "hiddenSegmentsCount": -1,
+    "lockByColor": -1,
+    "receiveOnly": false,
+    "isLockedByNeighbors": false,
+    "hiddenItemIndexes": [
+     0,
+     1,
+     2
+    ],
+    "receiveOnlyColorId": -1,
+    "lockByPosition": null,
+    "needFill": false
+   },
+   {
+    "segments": [
+     {
+      "colorId": 5,
+      "size": 1,
+      "isSegmentPartsHidden": [
+       false
+      ],
+      "hiddenCount": 0,
+      "id": 0
+     },
+     {
+      "colorId": 7,
+      "size": 1,
+      "isSegmentPartsHidden": [
+       true
+      ],
+      "hiddenCount": 0,
+      "id": 0
+     },
+     {
+      "colorId": 1,
+      "size": 1,
+      "isSegmentPartsHidden": [
+       true
+      ],
+      "hiddenCount": 0,
+      "id": 0
+     },
+     {
+      "colorId": 6,
+      "size": 1,
+      "isSegmentPartsHidden": [
+       true
+      ],
+      "hiddenCount": 0,
+      "id": 0
+     }
+    ],
+    "maxSegmentsCount": 4,
+    "hiddenSegmentsCount": -1,
+    "lockByColor": -1,
+    "receiveOnly": false,
+    "isLockedByNeighbors": false,
+    "hiddenItemIndexes": [
+     0,
+     1,
+     2
+    ],
+    "receiveOnlyColorId": -1,
+    "lockByPosition": null,
+    "needFill": false
+   },
+   {
+    "segments": [
+     {
+      "colorId": 1,
+      "size": 1,
+      "isSegmentPartsHidden": [
+       false
+      ],
+      "hiddenCount": 0,
+      "id": 0
+     },
+     {
+      "colorId": 4,
+      "size": 1,
+      "isSegmentPartsHidden": [
+       true
+      ],
+      "hiddenCount": 0,
+      "id": 0
+     },
+     {
+      "colorId": 3,
+      "size": 1,
+      "isSegmentPartsHidden": [
+       true
+      ],
+      "hiddenCount": 0,
+      "id": 0
+     },
+     {
+      "colorId": 0,
+      "size": 1,
+      "isSegmentPartsHidden": [
+       true
+      ],
+      "hiddenCount": 0,
+      "id": 0
+     }
+    ],
+    "maxSegmentsCount": 4,
+    "hiddenSegmentsCount": -1,
+    "lockByColor": -1,
+    "receiveOnly": false,
+    "isLockedByNeighbors": false,
+    "hiddenItemIndexes": [
+     0,
+     1,
+     2
+    ],
+    "receiveOnlyColorId": -1,
+    "lockByPosition": null,
+    "needFill": false
+   }
+  ],
+  "FirstMovesHint": [
+   {
+    "colorId": 1,
+    "size": 1,
+    "isSegmentPartsHidden": null,
+    "hiddenCount": 0,
+    "id": 0
+   },
+   {
+    "colorId": 2,
+    "size": 1,
+    "isSegmentPartsHidden": null,
+    "hiddenCount": 0,
+    "id": 0
+   }
+  ],
+  "DifficultyCategory": 1,
+  "InternalId": 2,
+  "Layout": 0,
+  "Hash": "2e1b95f97ca282f421ab5d986bbabb7b0ab4bdc203e689ef5a57af3d7f148497",
+  "LevelType": 0,
+  "RuleSet": 1,
+  "LayoutId": "DC_18_1_PUMPKIN",
+  "LevelTypeName": "Default",
+  "RuleSetName": "IndependentColors",
+  "index": 1
+ },
+ {
+  "Flasks": [
+   {
+    "segments": [
+     {
+      "colorId": 1,
+      "size": 2,
+      "isSegmentPartsHidden": [
+       false,
+       true
+      ],
+      "hiddenCount": 0,
+      "id": 0
+     },
+     {
+      "colorId": 2,
+      "size": 1,
+      "isSegmentPartsHidden": [
+       true
+      ],
+      "hiddenCount": 0,
+      "id": 0
+     },
+     {
+      "colorId": 5,
+      "size": 1,
+      "isSegmentPartsHidden": [
+       true
+      ],
+      "hiddenCount": 0,
+      "id": 0
+     }
+    ],
+    "maxSegmentsCount": 4,
+    "hiddenSegmentsCount": -1,
+    "lockByColor": -1,
+    "receiveOnly": false,
+    "isLockedByNeighbors": false,
+    "hiddenItemIndexes": [
+     0,
+     1,
+     2
+    ],
+    "receiveOnlyColorId": -1,
+    "lockByPosition": null,
+    "needFill": false
+   },
+   {
+    "segments": [
+     {
+      "colorId": 1,
+      "size": 1,
+      "isSegmentPartsHidden": [
+       false
+      ],
+      "hiddenCount": 0,
+      "id": 0
+     },
+     {
+      "colorId": 0,
+      "size": 1,
+      "isSegmentPartsHidden": [
+       true
+      ],
+      "hiddenCount": 0,
+      "id": 0
+     },
+     {
+      "colorId": 2,
+      "size": 1,
+      "isSegmentPartsHidden": [
+       true
+      ],
+      "hiddenCount": 0,
+      "id": 0
+     },
+     {
+      "colorId": 3,
+      "size": 1,
+      "isSegmentPartsHidden": [
+       true
+      ],
+      "hiddenCount": 0,
+      "id": 0
+     }
+    ],
+    "maxSegmentsCount": 4,
+    "hiddenSegmentsCount": -1,
+    "lockByColor": -1,
+    "receiveOnly": false,
+    "isLockedByNeighbors": false,
+    "hiddenItemIndexes": [
+     0,
+     1,
+     2
+    ],
+    "receiveOnlyColorId": -1,
+    "lockByPosition": null,
+    "needFill": false
+   },
+   {
+    "segments": [
+     {
+      "colorId": 0,
+      "size": 1,
+      "isSegmentPartsHidden": [
+       false
+      ],
+      "hiddenCount": 0,
+      "id": 0
+     },
+     {
+      "colorId": 4,
+      "size": 1,
+      "isSegmentPartsHidden": [
+       true
+      ],
+      "hiddenCount": 0,
+      "id": 0
+     },
+     {
+      "colorId": 7,
+      "size": 1,
+      "isSegmentPartsHidden": [
+       true
+      ],
+      "hiddenCount": 0,
+      "id": 0
+     },
+     {
+      "colorId": 3,
+      "size": 1,
+      "isSegmentPartsHidden": [
+       true
+      ],
+      "hiddenCount": 0,
+      "id": 0
+     }
+    ],
+    "maxSegmentsCount": 4,
+    "hiddenSegmentsCount": -1,
+    "lockByColor": -1,
+    "receiveOnly": false,
+    "isLockedByNeighbors": false,
+    "hiddenItemIndexes": [
+     0,
+     1,
+     2
+    ],
+    "receiveOnlyColorId": -1,
+    "lockByPosition": null,
+    "needFill": false
+   },
+   {
+    "segments": [
+     {
+      "colorId": 3,
+      "size": 1,
+      "isSegmentPartsHidden": [
+       false
+      ],
+      "hiddenCount": 0,
+      "id": 0
+     },
+     {
+      "colorId": 7,
+      "size": 2,
+      "isSegmentPartsHidden": [
+       true,
+       true
+      ],
+      "hiddenCount": 0,
+      "id": 0
+     },
+     {
+      "colorId": 2,
+      "size": 1,
+      "isSegmentPartsHidden": [
+       true
+      ],
+      "hiddenCount": 0,
+      "id": 0
+     }
+    ],
+    "maxSegmentsCount": 4,
+    "hiddenSegmentsCount": -1,
+    "lockByColor": -1,
+    "receiveOnly": false,
+    "isLockedByNeighbors": false,
+    "hiddenItemIndexes": [
+     0,
+     1,
+     2
+    ],
+    "receiveOnlyColorId": -1,
+    "lockByPosition": null,
+    "needFill": false
+   },
+   {
+    "segments": [
+     {
+      "colorId": 1,
+      "size": 1,
+      "isSegmentPartsHidden": [
+       false
+      ],
+      "hiddenCount": 0,
+      "id": 0
+     },
+     {
+      "colorId": 2,
+      "size": 1,
+      "isSegmentPartsHidden": [
+       true
+      ],
+      "hiddenCount": 0,
+      "id": 0
+     },
+     {
+      "colorId": 4,
+      "size": 1,
+      "isSegmentPartsHidden": [
+       true
+      ],
+      "hiddenCount": 0,
+      "id": 0
+     },
+     {
+      "colorId": 0,
+      "size": 1,
+      "isSegmentPartsHidden": [
+       true
+      ],
+      "hiddenCount": 0,
+      "id": 0
+     }
+    ],
+    "maxSegmentsCount": 4,
+    "hiddenSegmentsCount": -1,
+    "lockByColor": -1,
+    "receiveOnly": false,
+    "isLockedByNeighbors": false,
+    "hiddenItemIndexes": [
+     0,
+     1,
+     2
+    ],
+    "receiveOnlyColorId": -1,
+    "lockByPosition": null,
+    "needFill": false
+   },
+   {
+    "segments": [
+     {
+      "colorId": 7,
+      "size": 1,
+      "isSegmentPartsHidden": [
+       false
+      ],
+      "hiddenCount": 0,
+      "id": 0
+     },
+     {
+      "colorId": 5,
+      "size": 1,
+      "isSegmentPartsHidden": [
+       true
+      ],
+      "hiddenCount": 0,
+      "id": 0
+     },
+     {
+      "colorId": 2,
+      "size": 1,
+      "isSegmentPartsHidden": [
+       true
+      ],
+      "hiddenCount": 0,
+      "id": 0
+     },
+     {
+      "colorId": 3,
+      "size": 1,
+      "isSegmentPartsHidden": [
+       true
+      ],
+      "hiddenCount": 0,
+      "id": 0
+     }
+    ],
+    "maxSegmentsCount": 4,
+    "hiddenSegmentsCount": -1,
+    "lockByColor": -1,
+    "receiveOnly": false,
+    "isLockedByNeighbors": false,
+    "hiddenItemIndexes": [
+     0,
+     1,
+     2
+    ],
+    "receiveOnlyColorId": -1,
+    "lockByPosition": null,
+    "needFill": false
+   },
+   {
+    "segments": [
+     {
+      "colorId": 4,
+      "size": 1,
+      "isSegmentPartsHidden": [
+       false
+      ],
+      "hiddenCount": 0,
+      "id": 0
+     },
+     {
+      "colorId": 6,
+      "size": 1,
+      "isSegmentPartsHidden": [
+       true
+      ],
+      "hiddenCount": 0,
+      "id": 0
+     },
+     {
+      "colorId": 2,
+      "size": 1,
+      "isSegmentPartsHidden": [
+       true
+      ],
+      "hiddenCount": 0,
+      "id": 0
+     },
+     {
+      "colorId": 4,
+      "size": 1,
+      "isSegmentPartsHidden": [
+       true
+      ],
+      "hiddenCount": 0,
+      "id": 0
+     }
+    ],
+    "maxSegmentsCount": 4,
+    "hiddenSegmentsCount": -1,
+    "lockByColor": -1,
+    "receiveOnly": false,
+    "isLockedByNeighbors": false,
+    "hiddenItemIndexes": [
+     0,
+     1,
+     2
+    ],
+    "receiveOnlyColorId": -1,
+    "lockByPosition": null,
+    "needFill": false
+   },
+   {
+    "segments": [
+     {
+      "colorId": 1,
+      "size": 1,
+      "isSegmentPartsHidden": [
+       false
+      ],
+      "hiddenCount": 0,
+      "id": 0
+     },
+     {
+      "colorId": 6,
+      "size": 2,
+      "isSegmentPartsHidden": [
+       true,
+       true
+      ],
+      "hiddenCount": 0,
+      "id": 0
+     },
+     {
+      "colorId": 5,
+      "size": 1,
+      "isSegmentPartsHidden": [
+       true
+      ],
+      "hiddenCount": 0,
+      "id": 0
+     }
+    ],
+    "maxSegmentsCount": 4,
+    "hiddenSegmentsCount": -1,
+    "lockByColor": -1,
+    "receiveOnly": false,
+    "isLockedByNeighbors": false,
+    "hiddenItemIndexes": [
+     0,
+     1,
+     2
+    ],
+    "receiveOnlyColorId": -1,
+    "lockByPosition": null,
+    "needFill": false
+   },
+   {
+    "segments": [
+     {
+      "colorId": 2,
+      "size": 1,
+      "isSegmentPartsHidden": [
+       false
+      ],
+      "hiddenCount": 0,
+      "id": 0
+     },
+     {
+      "colorId": 1,
+      "size": 1,
+      "isSegmentPartsHidden": [
+       true
+      ],
+      "hiddenCount": 0,
+      "id": 0
+     },
+     {
+      "colorId": 3,
+      "size": 1,
+      "isSegmentPartsHidden": [
+       true
+      ],
+      "hiddenCount": 0,
+      "id": 0
+     },
+     {
+      "colorId": 4,
+      "size": 1,
+      "isSegmentPartsHidden": [
+       true
+      ],
+      "hiddenCount": 0,
+      "id": 0
+     }
+    ],
+    "maxSegmentsCount": 4,
+    "hiddenSegmentsCount": -1,
+    "lockByColor": -1,
+    "receiveOnly": false,
+    "isLockedByNeighbors": false,
+    "hiddenItemIndexes": [
+     0,
+     1,
+     2
+    ],
+    "receiveOnlyColorId": -1,
+    "lockByPosition": null,
+    "needFill": false
+   },
+   {
+    "segments": [
+     {
+      "colorId": 4,
+      "size": 2,
+      "isSegmentPartsHidden": null,
+      "hiddenCount": 0,
+      "id": 0
+     }
+    ],
+    "maxSegmentsCount": 14,
+    "hiddenSegmentsCount": -1,
+    "lockByColor": -1,
+    "receiveOnly": true,
+    "isLockedByNeighbors": false,
+    "hiddenItemIndexes": null,
+    "receiveOnlyColorId": -1,
+    "lockByPosition": null,
+    "needFill": true
+   },
+   {
+    "segments": [
+     {
+      "colorId": 6,
+      "size": 1,
+      "isSegmentPartsHidden": [
+       false
+      ],
+      "hiddenCount": 0,
+      "id": 0
+     },
+     {
+      "colorId": 4,
+      "size": 1,
+      "isSegmentPartsHidden": [
+       true
+      ],
+      "hiddenCount": 0,
+      "id": 0
+     },
+     {
+      "colorId": 2,
+      "size": 2,
+      "isSegmentPartsHidden": [
+       true,
+       true
+      ],
+      "hiddenCount": 0,
+      "id": 0
+     }
+    ],
+    "maxSegmentsCount": 4,
+    "hiddenSegmentsCount": -1,
+    "lockByColor": -1,
+    "receiveOnly": false,
+    "isLockedByNeighbors": false,
+    "hiddenItemIndexes": [
+     0,
+     1,
+     2
+    ],
+    "receiveOnlyColorId": -1,
+    "lockByPosition": null,
+    "needFill": false
+   },
+   {
+    "segments": [
+     {
+      "colorId": 4,
+      "size": 1,
+      "isSegmentPartsHidden": [
+       false
+      ],
+      "hiddenCount": 0,
+      "id": 0
+     },
+     {
+      "colorId": 5,
+      "size": 1,
+      "isSegmentPartsHidden": [
+       true
+      ],
+      "hiddenCount": 0,
+      "id": 0
+     },
+     {
+      "colorId": 3,
+      "size": 1,
+      "isSegmentPartsHidden": [
+       true
+      ],
+      "hiddenCount": 0,
+      "id": 0
+     },
+     {
+      "colorId": 0,
+      "size": 1,
+      "isSegmentPartsHidden": [
+       true
+      ],
+      "hiddenCount": 0,
+      "id": 0
+     }
+    ],
+    "maxSegmentsCount": 4,
+    "hiddenSegmentsCount": -1,
+    "lockByColor": -1,
+    "receiveOnly": false,
+    "isLockedByNeighbors": false,
+    "hiddenItemIndexes": [
+     0,
+     1,
+     2
+    ],
+    "receiveOnlyColorId": -1,
+    "lockByPosition": null,
+    "needFill": false
+   },
+   {
+    "segments": [
+     {
+      "colorId": 5,
+      "size": 1,
+      "isSegmentPartsHidden": [
+       false
+      ],
+      "hiddenCount": 0,
+      "id": 0
+     },
+     {
+      "colorId": 4,
+      "size": 1,
+      "isSegmentPartsHidden": [
+       true
+      ],
+      "hiddenCount": 0,
+      "id": 0
+     },
+     {
+      "colorId": 6,
+      "size": 1,
+      "isSegmentPartsHidden": [
+       true
+      ],
+      "hiddenCount": 0,
+      "id": 0
+     },
+     {
+      "colorId": 0,
+      "size": 1,
+      "isSegmentPartsHidden": [
+       true
+      ],
+      "hiddenCount": 0,
+      "id": 0
+     }
+    ],
+    "maxSegmentsCount": 4,
+    "hiddenSegmentsCount": -1,
+    "lockByColor": -1,
+    "receiveOnly": false,
+    "isLockedByNeighbors": false,
+    "hiddenItemIndexes": [
+     0,
+     1,
+     2
+    ],
+    "receiveOnlyColorId": -1,
+    "lockByPosition": null,
+    "needFill": false
+   },
+   {
+    "segments": [
+     {
+      "colorId": 0,
+      "size": 1,
+      "isSegmentPartsHidden": [
+       false
+      ],
+      "hiddenCount": 0,
+      "id": 0
+     },
+     {
+      "colorId": 7,
+      "size": 2,
+      "isSegmentPartsHidden": [
+       true,
+       true
+      ],
+      "hiddenCount": 0,
+      "id": 0
+     },
+     {
+      "colorId": 2,
+      "size": 1,
+      "isSegmentPartsHidden": [
+       true
+      ],
+      "hiddenCount": 0,
+      "id": 0
+     }
+    ],
+    "maxSegmentsCount": 4,
+    "hiddenSegmentsCount": -1,
+    "lockByColor": -1,
+    "receiveOnly": false,
+    "isLockedByNeighbors": false,
+    "hiddenItemIndexes": [
+     0,
+     1,
+     2
+    ],
+    "receiveOnlyColorId": -1,
+    "lockByPosition": null,
+    "needFill": false
+   },
+   {
+    "segments": [
+     {
+      "colorId": 2,
+      "size": 1,
+      "isSegmentPartsHidden": [
+       false
+      ],
+      "hiddenCount": 0,
+      "id": 0
+     },
+     {
+      "colorId": 5,
+      "size": 1,
+      "isSegmentPartsHidden": [
+       true
+      ],
+      "hiddenCount": 0,
+      "id": 0
+     },
+     {
+      "colorId": 1,
+      "size": 1,
+      "isSegmentPartsHidden": [
+       true
+      ],
+      "hiddenCount": 0,
+      "id": 0
+     },
+     {
+      "colorId": 2,
+      "size": 1,
+      "isSegmentPartsHidden": [
+       true
+      ],
+      "hiddenCount": 0,
+      "id": 0
+     }
+    ],
+    "maxSegmentsCount": 4,
+    "hiddenSegmentsCount": -1,
+    "lockByColor": -1,
+    "receiveOnly": false,
+    "isLockedByNeighbors": false,
+    "hiddenItemIndexes": [
+     0,
+     1,
+     2
+    ],
+    "receiveOnlyColorId": -1,
+    "lockByPosition": null,
+    "needFill": false
+   },
+   {
+    "segments": [
+     {
+      "colorId": 0,
+      "size": 1,
+      "isSegmentPartsHidden": [
+       false
+      ],
+      "hiddenCount": 0,
+      "id": 0
+     },
+     {
+      "colorId": 7,
+      "size": 1,
+      "isSegmentPartsHidden": [
+       true
+      ],
+      "hiddenCount": 0,
+      "id": 0
+     },
+     {
+      "colorId": 5,
+      "size": 1,
+      "isSegmentPartsHidden": [
+       true
+      ],
+      "hiddenCount": 0,
+      "id": 0
+     },
+     {
+      "colorId": 4,
+      "size": 1,
+      "isSegmentPartsHidden": [
+       true
+      ],
+      "hiddenCount": 0,
+      "id": 0
+     }
+    ],
+    "maxSegmentsCount": 4,
+    "hiddenSegmentsCount": -1,
+    "lockByColor": -1,
+    "receiveOnly": false,
+    "isLockedByNeighbors": false,
+    "hiddenItemIndexes": [
+     0,
+     1,
+     2
+    ],
+    "receiveOnlyColorId": -1,
+    "lockByPosition": null,
+    "needFill": false
+   },
+   {
+    "segments": [
+     {
+      "colorId": 4,
+      "size": 1,
+      "isSegmentPartsHidden": [
+       false
+      ],
+      "hiddenCount": 0,
+      "id": 0
+     },
+     {
+      "colorId": 5,
+      "size": 1,
+      "isSegmentPartsHidden": [
+       true
+      ],
+      "hiddenCount": 0,
+      "id": 0
+     },
+     {
+      "colorId": 6,
+      "size": 1,
+      "isSegmentPartsHidden": [
+       true
+      ],
+      "hiddenCount": 0,
+      "id": 0
+     },
+     {
+      "colorId": 0,
+      "size": 1,
+      "isSegmentPartsHidden": [
+       true
+      ],
+      "hiddenCount": 0,
+      "id": 0
+     }
+    ],
+    "maxSegmentsCount": 4,
+    "hiddenSegmentsCount": -1,
+    "lockByColor": -1,
+    "receiveOnly": false,
+    "isLockedByNeighbors": false,
+    "hiddenItemIndexes": [
+     0,
+     1,
+     2
+    ],
+    "receiveOnlyColorId": -1,
+    "lockByPosition": null,
+    "needFill": false
+   },
+   {
+    "segments": [
+     {
+      "colorId": 6,
+      "size": 1,
+      "isSegmentPartsHidden": [
+       false
+      ],
+      "hiddenCount": 0,
+      "id": 0
+     },
+     {
+      "colorId": 7,
+      "size": 1,
+      "isSegmentPartsHidden": [
+       true
+      ],
+      "hiddenCount": 0,
+      "id": 0
+     },
+     {
+      "colorId": 4,
+      "size": 1,
+      "isSegmentPartsHidden": [
+       true
+      ],
+      "hiddenCount": 0,
+      "id": 0
+     },
+     {
+      "colorId": 6,
+      "size": 1,
+      "isSegmentPartsHidden": [
+       true
+      ],
+      "hiddenCount": 0,
+      "id": 0
+     }
+    ],
+    "maxSegmentsCount": 4,
+    "hiddenSegmentsCount": -1,
+    "lockByColor": -1,
+    "receiveOnly": false,
+    "isLockedByNeighbors": false,
+    "hiddenItemIndexes": [
+     0,
+     1,
+     2
+    ],
+    "receiveOnlyColorId": -1,
+    "lockByPosition": null,
+    "needFill": false
+   },
+   {
+    "segments": [
+     {
+      "colorId": 4,
+      "size": 1,
+      "isSegmentPartsHidden": [
+       false
+      ],
+      "hiddenCount": 0,
+      "id": 0
+     },
+     {
+      "colorId": 3,
+      "size": 1,
+      "isSegmentPartsHidden": [
+       true
+      ],
+      "hiddenCount": 0,
+      "id": 0
+     },
+     {
+      "colorId": 1,
+      "size": 1,
+      "isSegmentPartsHidden": [
+       true
+      ],
+      "hiddenCount": 0,
+      "id": 0
+     },
+     {
+      "colorId": 3,
+      "size": 1,
+      "isSegmentPartsHidden": [
+       true
+      ],
+      "hiddenCount": 0,
+      "id": 0
+     }
+    ],
+    "maxSegmentsCount": 4,
+    "hiddenSegmentsCount": -1,
+    "lockByColor": -1,
+    "receiveOnly": false,
+    "isLockedByNeighbors": false,
+    "hiddenItemIndexes": [
+     0,
+     1,
+     2
+    ],
+    "receiveOnlyColorId": -1,
+    "lockByPosition": null,
+    "needFill": false
+   }
+  ],
+  "FirstMovesHint": [],
+  "DifficultyCategory": 1,
+  "InternalId": 3,
+  "Layout": 0,
+  "Hash": "502a9a429fcad4f17b52d7f76d06e5368d8b3fc3988395cc5caed7dcc3a3fe46",
+  "LevelType": 0,
+  "RuleSet": 1,
+  "LayoutId": "DC_18_1_GHOST",
+  "LevelTypeName": "Default",
+  "RuleSetName": "IndependentColors",
+  "index": 2
+ }
+]
